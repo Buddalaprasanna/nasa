@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.sqlite3
+*.db
+.env
+venv/
+env/
+.pytest_cache/
+
+# Node
+node_modules/
+dist/
+.vite/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Debug audio
+debug_question.raw
+debug_question.wav
+
+# Node
+node_modules/
+dist/

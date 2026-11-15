@@ -1,0 +1,23 @@
+{
+  "name": "field-shift",
+  "version": "1.0.0",
+  "description": "FIELD SHIFT - Smart Farming, NASA Earth Observation & Crop Rotation App for Indian Farmers",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "serve": "node server.js",
+    "android:build": "npx cap copy && npx cap open android"
+  },
+  "keywords": [
+    "farming",
+    "agritech",
+    "nasa-earth-data",
+    "crop-rotation",
+    "android",
+    "multilingual",
+    "voice-assistant",
+    "indian-farmers"
+  ],
+  "author": "Antigravity",
+  "license": "MIT"
+}

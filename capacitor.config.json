@@ -1,0 +1,18 @@
+{
+  "appId": "com.fieldshift.app",
+  "appName": "FIELD SHIFT",
+  "webDir": "public",
+  "bundledWebRuntime": false,
+  "android": {
+    "backgroundColor": "#F8F8F0",
+    "allowMixedContent": true,
+    "captureInput": true,
+    "webContentsDebuggingEnabled": true
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 2000,
+      "backgroundColor": "#245C3A"
+    }
+  }
+}

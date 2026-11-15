@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-dark: #245C3A;
+  --brand-light: #8DBF74;
+  --brand-bg: #F8F8F0;
+  --brand-card: #FFFFFF;
+  --brand-warning: #F59E0B;
+  --brand-danger: #EF4444;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans', sans-serif;
+  background-color: var(--brand-bg);
+  color: #1F2937;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Touch-friendly buttons and ripple feedback for farmers */
+.btn-touch {
+  min-height: 48px;
+  min-width: 48px;
+  touch-action: manipulation;
+  transition: all 0.15s ease-in-out;
+}
+
+.btn-touch:active {
+  transform: scale(0.98);
+}
+
+/* Custom cards with soft agricultural shadow */
+.farm-card {
+  background: #FFFFFF;
+  border-radius: 1rem;
+  border: 1px solid rgba(36, 92, 58, 0.08);
+  box-shadow: 0 4px 14px -2px rgba(36, 92, 58, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.farm-card:hover {
+  box-shadow: 0 8px 24px -4px rgba(36, 92, 58, 0.12);
+}
+
+/* Audio active wave animation */
+@keyframes audio-pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 0.8;
+  }
+}
+
+.audio-speaking {
+  animation: audio-pulse 1.2s infinite ease-in-out;
+}
+
+/* Hide scrollbar for neat horizontal cards */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
